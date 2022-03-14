@@ -1,50 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
 
 <body>
-    <style>
-        .myClass {
-            color: white;
-            background-color: DodgerBlue;
-            padding: 20px;
-            text-align: center;
-            margin: 10px;
-        }
-    </style>
+    <!-- title -->
+    <h1><em>Bartu Bozkurt</em></h1>
+    <!-- about  -->
+    <h2>About</h2>
+    <p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto quae optio modi expedita iste, excepturi minima
+        dolore facere quasi, distinctio necessitatibus cumque est dolorem velit ea itaque at ratione fuga?</p>
+    </p>
+    <!-- skills -->
+    <div>
+        <h2>Hobbies</h2>
+        <ol>
+            <li><strong>Film</strong></li>
+            <ul>
+                <li><a href="https://www.imdb.com/title/tt1596363/?ref_=fn_al_tt_1">The Big Short</a></li>
+            </ul>
 
-    <h1>The template Element</h1>
+            <li><strong>Book</strong></li>
+            <ul>
+                <li><a
+                        href="https://www.goodreads.com/book/show/12609433-the-power-of-habit?from_search=true&from_srp=true&qid=WaSGdeMhAM&rank=6">The
+                        Power of Habit: Why We Do What We Do in Life and Business</a></li>
+            </ul>
+            <li><strong>Series</strong></li>
+            <ul>
 
-    <p>This example fills the web page with one new div element for each item in an array.</p>
-    <p>The HTML code of each div element is inside the template element.</p>
+                <li><a href="https://www.imdb.com/title/tt0108778/">Friends</a></li>
+            </ul>
+        </ol>
+    </div>
+    <h3>My Favourite Series</h3>
+    <p>Friends, How I Met Your Mother</p>
 
-    <p>Click the button below to display the hidden content from the template element.</p>
 
-    <button onclick="showContent()">Show hidden content</button>
+    <img src="../img/t.jpg" alt="test img" height="400">
+    <p>
+        <strong>test test : </strong>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur minima cum rerum nisi dolore ipsum?</p>
 
-    <template>
-        <div class="myClass">I like: </div>
-    </template>
+    </p>
 
-    <script>
-        var myArr = ["Audi", "BMW", "Ford", "Honda", "Jaguar", "Nissan"];
+    <p>CS50x Kodluyoruz için hemen kayıt ol, dersleri anında almaya başla. Dersler tamamen online ve ücretsiz! Üstelik
+        CS50x Kodluyoruz herkese göre.
+        İster hiç bilgisayar dersi almamış olun, ister kendinizi ilerletmek isteyin: Bu ders, sağlam bir algoritma
+        temeli isteyen herkes için!</p>
 
-        function showContent() {
-            var temp, item, a, i;
-            temp = document.getElementsByTagName("template")[0];
-            //get the div element from the template:
-            item = temp.content.querySelector("div");
-            //for each item in the array:
-            for (i = 0; i < myArr.length; i++) {
-                //Create a new node, based on the template:
-                a = document.importNode(item, true);
-                //Add data from the array:
-                a.textContent += myArr[i];
-                //append the new node wherever you like:
-                document.body.appendChild(a);
-            }
-        }
-    </script>
+        <br>
 
+
+        
+        <p>CS50x Kodluyoruz için hemen kayıt ol, dersleri anında almaya başla. Dersler tamamen online ve ücretsiz! Üstelik CS50x Kodluyoruz herkese göre.
+            İster hiç bilgisayar dersi almamış olun, ister kendinizi ilerletmek isteyin: Bu ders, sağlam bir algoritma temeli isteyen herkes için!</p>
+
+            <figcaption>
+                <p>A duck.</p>
+                <p><small>Photograph courtesy of News.</small></p>
+            </figcaption>
+            
+            <figure>
+                <img src="https://cdn.sanity.io/images/9kdepi1d/production/1a22b9fada2411b7369592fd852613637834e866-5520x3680.jpg?auto=format" width="600" height="400"/>
+            </figure>
+
+
+    <!-- this is a quick test! -->
 </body>
 
 </html>
