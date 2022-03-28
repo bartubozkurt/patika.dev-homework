@@ -1,2 +1,2 @@
-<img src="img/dmeo.gif" width="40" height="40" />
+<img src="img/dmeo.gif"/>
 
